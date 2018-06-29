@@ -38,9 +38,16 @@ module.exports = {
           presets: [
             "es2015",
             "react"
+          ],
+          plugins: [
+            "react-hot-loader/babel"
           ]
         }
-      },
-    ],
-  }
+      }
+    ]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NamedModulesPlugin(),
+  ]
 };
