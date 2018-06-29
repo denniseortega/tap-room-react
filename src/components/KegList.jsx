@@ -1,8 +1,12 @@
 import React from "react";
+import Keg from "./Keg";
 
 function KegList(){
   return(
-    <Ticket/>
+    <Ticket
+      name="Modern Times"
+      type="ipa"
+      abv="3.7"/>
   );
 }
 
