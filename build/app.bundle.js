@@ -22774,7 +22774,10 @@ var _Keg2 = _interopRequireDefault(_Keg);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function KegList() {
-  return _react2.default.createElement(Ticket, null);
+  return _react2.default.createElement(Ticket, {
+    name: "Modern Times",
+    type: "ipa",
+    abv: "3.7" });
 }
 
 exports.default = KegList;
@@ -22796,24 +22799,16 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Keg() {
+function Keg(props) {
   return _react2.default.createElement(
     "div",
     null,
     _react2.default.createElement(
       "h3",
       null,
-      "Keg"
-    ),
-    _react2.default.createElement(
-      "h3",
-      null,
-      "Modern Times Beer"
-    ),
-    _react2.default.createElement(
-      "h3",
-      null,
-      "Juice Smoothie ipa"
+      props.name,
+      " - ",
+      props.type
     ),
     _react2.default.createElement(
       "p",
@@ -22821,8 +22816,13 @@ function Keg() {
       _react2.default.createElement(
         "em",
         null,
-        "Firebase entries not saving!"
+        "3.7"
       )
+    ),
+    _react2.default.createElement(
+      "h3",
+      null,
+      "Juice Smoothie ipa"
     ),
     _react2.default.createElement("hr", null)
   );
