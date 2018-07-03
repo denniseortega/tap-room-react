@@ -24,7 +24,8 @@ none yet
 * Employee may fill out form when a new keg is added to the list.
 * Employee may edit a keg's properties after entering them just in case.
 * As a patron and employee you may see how many pints are left in a keg.
- Technologies Used
+
+## Technologies Used
 * Javascript
 * JSX
 * React
